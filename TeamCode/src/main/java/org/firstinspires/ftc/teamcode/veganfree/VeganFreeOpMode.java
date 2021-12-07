@@ -28,6 +28,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 public class VeganFreeOpMode extends OpMode
 {
 
+    // Device map declaration
     public DeviceMap map;
 
     /**
@@ -41,7 +42,9 @@ public class VeganFreeOpMode extends OpMode
     @Override
     public void init()
     {
+        // device map instantiation
         map = new DeviceMap();
+        // device map initialization
         map.init(hardwareMap);
     }
 
