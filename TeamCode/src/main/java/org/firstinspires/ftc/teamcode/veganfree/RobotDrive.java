@@ -1,7 +1,14 @@
 package org.firstinspires.ftc.teamcode.veganfree;
 
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+
 public class RobotDrive
 {
+
+    public void updateControllerDrive(OpMode opMode)
+    {
+
+    }
 
     /**
      * Moves the robot according to the joysticks on the controller.

@@ -23,13 +23,21 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
  * to {@link OpMode}. Those methods with the @Override tags
  * are automatically called by the {@link OpMode} abstract
  * class, and therefore you don't have to worry about them.
+ *
+ * This class also holds the instances of all of the main
+ * objects within the robot's program such as the {@link DeviceMap}.
  */
 @TeleOp(name = "Vegan Free Operation Mode", group = "TeleOp")
 public class VeganFreeOpMode extends OpMode
 {
 
+    // Declarations
+
     // Device map declaration
     public DeviceMap map;
+
+    // Robot Drive declaration
+    public RobotDrive drive;
 
     /**
      * The Initialization method of the Operation Mode
@@ -42,8 +50,10 @@ public class VeganFreeOpMode extends OpMode
     @Override
     public void init()
     {
-        // device map instantiation
+        // Instantiations
         map = new DeviceMap();
+        drive = new RobotDrive();
+
         // device map initialization
         map.init(hardwareMap);
     }
@@ -71,6 +81,8 @@ public class VeganFreeOpMode extends OpMode
      * method, and can be used to do whatever you would like when the
      * robot is first fully booted up.
      *
+     * This method is optional and is not required to exist in your code.
+     *
      * This method is automatically handled by the {@link OpMode}
      * class.
      */
@@ -84,6 +96,8 @@ public class VeganFreeOpMode extends OpMode
      * The stop method is invoked right before the robot program in the
      * robot is terminated (stopped, turned off, exited...), and can
      * be used for whatever you would like.
+     *
+     * This method is optional and is not required to exist in your code.
      *
      * This method is automatically handled by the {@link OpMode}
      * class.
