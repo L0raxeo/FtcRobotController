@@ -73,7 +73,7 @@ public class VeganFreeOpMode extends OpMode
     @Override
     public void loop()
     {
-
+        drive.updateControllerDrive(this, map);
     }
 
     /**
