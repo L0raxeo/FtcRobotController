@@ -24,7 +24,7 @@ import com.qualcomm.robotcore.hardware.Servo;
  * are just classes that can be declared and instantiated.
  *
  * When defining and creating an object in Java,
- * there are 3 different steps:
+ * there are 2 different steps:
  * 1) Declaration - declaring an object is the process
  *    of stating that an object will exists, and what type
  *    of object it is. You can think of it as the blueprints
