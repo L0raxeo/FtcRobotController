@@ -112,8 +112,8 @@ public class DeviceMap
      */
     public void init(HardwareMap map)
     {
-        leftBack = map.get(DcMotor.class, "leftBack");
-        rightBack = map.get(DcMotor.class, "rightBack");
+        leftBack = map.get(DcMotor.class, "left_back");
+        rightBack = map.get(DcMotor.class, "right_back");
 
         leftBack.setDirection(DcMotorSimple.Direction.FORWARD);
         rightBack.setDirection(DcMotorSimple.Direction.REVERSE);

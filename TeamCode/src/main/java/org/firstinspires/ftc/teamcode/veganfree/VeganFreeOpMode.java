@@ -56,6 +56,11 @@ public class VeganFreeOpMode extends OpMode
 
         // device map initialization
         map.init(hardwareMap);
+
+        // Queue robot message
+        telemetry.addData("Say,", "successfully initialized OpMode");
+        // Sends message
+        telemetry.update();
     }
 
     /**
