@@ -17,6 +17,9 @@ public class RobotDrive
         move(map, left, right);
     }
 
+    // claw stuff- anything that has to do within the claw is not required
+    private int curPos = 0;
+
     /**
      * Moves the robot according to the joysticks on the controller.
      *
@@ -26,8 +29,13 @@ public class RobotDrive
      */
     public void move(DeviceMap map, double left, double right)
     {
-        map.getLeftBack().setPower(left);
-        map.getRightBack().setPower(right);
+        map.getLeftBack().setPower(-right * 1.5);
+        map.getRightBack().setPower(-left * 1.5);
+
+        map.leftClaw.setPosition(curPos += 1);
+
+        map.getLeftBack().setPower(0);
+        map.getRightBack().setPower(0);
     }
 
 }

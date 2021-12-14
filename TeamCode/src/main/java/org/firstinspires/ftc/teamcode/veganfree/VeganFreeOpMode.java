@@ -5,7 +5,8 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 /**
  * The OpMode class is the main base of operations.
- * FYI: Op is short for operation.
+ * FYI: Op is short for operation. Tele is short for telephone
+ *      Telephone Operation
  *
  * The Operation Mode class holds all of the main
  * methods that are used to actually run the robot.
@@ -27,7 +28,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
  * This class also holds the instances of all of the main
  * objects within the robot's program such as the {@link DeviceMap}.
  */
-@TeleOp(name = "Vegan Free Operation Mode", group = "TeleOp")
+@TeleOp(name = "VeganFreeOpMode", group = "TeleOp")
 public class VeganFreeOpMode extends OpMode
 {
 
@@ -58,7 +59,7 @@ public class VeganFreeOpMode extends OpMode
         map.init(hardwareMap);
 
         // Queue robot message
-        telemetry.addData("Say,", "successfully initialized OpMode");
+        telemetry.addData("Say,", "Island Booiyoyouiuyoiyoiyouyuyi");
         // Sends message
         telemetry.update();
     }
